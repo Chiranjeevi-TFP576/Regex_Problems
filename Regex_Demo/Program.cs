@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem");
-            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email");
+            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
@@ -26,6 +26,12 @@
                     Console.WriteLine("Enter a EmailAdress");
                     string Email = Console.ReadLine();
                     CheckEmail.Name(Email);
+                    break;
+                case 4: //MobileNumber
+                    UC4_MobileNumber checkMobileNumber = new UC4_MobileNumber();
+                    Console.WriteLine("Enter a MobileNumber");
+                    string Mobile = Console.ReadLine();
+                    checkMobileNumber.Name(Mobile);
                     break;
                 default:
                     Console.WriteLine("End Of the Programme");
