@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem");
-            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber");
+
+            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber\nEnter 5 for PassWord");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
@@ -32,6 +33,12 @@
                     Console.WriteLine("Enter a MobileNumber");
                     string Mobile = Console.ReadLine();
                     checkMobileNumber.Name(Mobile);
+                    break;
+                case 5: //PassWord Rule
+                    UC5_PassWord password = new UC5_PassWord();
+                    Console.WriteLine("Enter a PassWord");
+                    string PassWord = Console.ReadLine();
+                    password.Name(PassWord);
                     break;
                 default:
                     Console.WriteLine("End Of the Programme");
