@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to User Registration Problem");
 
-            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber\nEnter 5 for PassWord");
+            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber\nEnter 5 for PassWord\nEnter 6 for PassWord AtLeast One UPPerCase");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
@@ -39,6 +39,12 @@
                     Console.WriteLine("Enter a PassWord");
                     string PassWord = Console.ReadLine();
                     password.Name(PassWord);
+                    break;
+                case 6: //PassWord At Least One UpperCase
+                    UC6_PassWordAtLeastOneUpperCase Password = new UC6_PassWordAtLeastOneUpperCase();
+                    Console.WriteLine("Enter a PassWord");
+                    string UpperCasePassWord = Console.ReadLine();
+                    Password.Name(UpperCasePassWord);
                     break;
                 default:
                     Console.WriteLine("End Of the Programme");
