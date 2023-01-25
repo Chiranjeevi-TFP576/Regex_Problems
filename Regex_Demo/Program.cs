@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to User Registration Problem");
 
-            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber\nEnter 5 for PassWord\nEnter 6 for PassWord AtLeast One UPPerCase\n\nEnter 7 for PassWord AtLeast One Number");
+            Console.WriteLine("Enter 1 for First Name\nEnter 2 for Last Name\nEnter 3 for Email\nEnter 4 for MobileNumber\nEnter 5 for PassWord\nEnter 6 for PassWord AtLeast One UPPerCase\nEnter 7 for PassWord AtLeast One Number\nEnter 8 PassWord AtLeast OneSpecialCharacter");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
@@ -51,6 +51,12 @@
                     Console.WriteLine("Enter a PassWord");
                     string OneNumber = Console.ReadLine();
                     Password1.Name(OneNumber);
+                    break;
+                case 8: //PassWord At Least one Special Character
+                    UC8_AtLeastSpecialCharacter SplChar = new UC8_AtLeastSpecialCharacter();
+                    Console.WriteLine("Enter a PassWord");
+                    string SpecialCharacter = Console.ReadLine();
+                    SplChar.Name(SpecialCharacter);
                     break;
                 default:
                     Console.WriteLine("End Of the Programme");
